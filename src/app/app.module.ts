@@ -16,8 +16,8 @@ import { MainModule } from './pages/main/main.module';
 
 // services
 import { LocalStorageService } from './services/local-storage/local-storage.service';
-import { ListService } from './services/list/list.service';
-import { TodoService } from './services/todo/todo.service';
+// import { ListService } from './services/list/list.service';
+// import { TodoService } from './services/todo/todo.service';
 import { InitGuardService } from './services/init-guard/init-guard.service';
 // import { SummaryModule } from './pages/summary/summary.module';
 // import { SettingModule } from './pages/setting/setting.module';
@@ -41,12 +41,13 @@ registerLocaleData(zh);
     AppRoutingModule,
     MainModule,
   ],
+
+  // ListService,
+  // TodoService,
   providers: [
     { provide: LOCALE_ID, useValue: 'zh-Hans' },
     { provide: NZ_I18N, useValue: zh_CN },
     LocalStorageService,
-    ListService,
-    TodoService,
     InitGuardService
   ],
   bootstrap: [ AppComponent ]

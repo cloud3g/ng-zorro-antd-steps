@@ -2,8 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { RankBy } from '../../../../../domain/type';
-import { ListService } from '../../../../services/list/list.service';
-import { TodoService } from '../../../../services/todo/todo.service';
+// import { ListService } from '../../../../services/list/list.service';
+// import { TodoService } from '../../../../services/todo/todo.service';
 
 @Component({
   selector: 'app-header',
@@ -17,19 +17,19 @@ export class HeaderComponent implements OnInit, OnDestroy {
   completedHide = false;
 
   constructor(
-    private listService: ListService,
-    private todoService: TodoService
+    // private listService: ListService, // List
+    // private todoService: TodoService // Todo
   ) { }
 
   ngOnInit(): void {
-    this.listService.current$
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(list => {
-        this.listTitle = list ? list.title : '';
-      });
-    this.todoService.completedHide$
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe(hide => this.completedHide = hide);
+    // this.listService.current$ // List
+    //   .pipe(takeUntil(this.unsubscribe$))
+    //   .subscribe(list => {
+    //     this.listTitle = list ? list.title : '';
+    //   });
+    // this.todoService.completedHide$ // Todo
+    //   .pipe(takeUntil(this.unsubscribe$))
+    //   .subscribe(hide => this.completedHide = hide);
   }
 
   ngOnDestroy(): void {
@@ -38,10 +38,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   switchRankType(e: RankBy): void {
-    this.todoService.toggleRank(e);
+    // this.todoService.toggleRank(e);
   }
 
   toggleCompletedHide(): void {
-    this.todoService.toggleCompletedHide(!this.completedHide);
+    // this.todoService.toggleCompletedHide(!this.completedHide);
   }
 }
