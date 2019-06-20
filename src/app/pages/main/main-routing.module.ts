@@ -9,6 +9,7 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainComponent,
+    // canActivate: [ false ],
     canActivate: [ InitGuardService ],
     children: [
       {

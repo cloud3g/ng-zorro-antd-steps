@@ -22,7 +22,8 @@ export class SidebarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.username = this.store.get(USERNAME);
+    // this.username = this.store.get(USERNAME);
+    this.username = "user";
   }
 
   openAddListModal(): void {
