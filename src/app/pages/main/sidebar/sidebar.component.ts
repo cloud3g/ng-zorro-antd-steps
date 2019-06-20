@@ -31,10 +31,10 @@ export class SidebarComponent implements OnInit {
   }
 
   goSetting() {
-    this.router.navigateByUrl('/setting');
+    // this.router.navigateByUrl('/setting');
   }
 
   goSummary() {
-    this.router.navigateByUrl('/summary');
+    // this.router.navigateByUrl('/summary');
   }
 }

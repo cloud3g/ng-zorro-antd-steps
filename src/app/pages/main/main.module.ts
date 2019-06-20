@@ -13,11 +13,10 @@ import { ListComponent } from './sidebar/list/list.component';
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './content/header/header.component';
 
-import { TodoComponent } from './content/todo/todo.component';
-import { SuggestComponent } from './content/header/suggest/suggest.component';
-
-// import { DetailComponent } from './detail/detail.component';
-// import { QuickAddComponent } from './content/quick-add/quick-add.component';
+// import { TodoComponent } from './content/todo/todo.component';// 右边 待办列表
+// import { SuggestComponent } from './content/header/suggest/suggest.component'; //右边 建议
+// import { DetailComponent } from './detail/detail.component'; // 右边 待办详情
+// import { QuickAddComponent } from './content/quick-add/quick-add.component';// 右边 新增待办
 
 @NgModule({
   imports: [
@@ -27,16 +26,16 @@ import { SuggestComponent } from './content/header/suggest/suggest.component';
     FormsModule
   ],
 
-  // DetailComponent // 待办详情
+  // TodoComponent, // 待办列表
+  // DetailComponent, // 待办详情
   // QuickAddComponent, // 新增待办
+  // SuggestComponent, // 建议按钮 内容
   declarations: [
     MainComponent,
     SidebarComponent,
     ListComponent,
     ContentComponent,
     HeaderComponent,
-    TodoComponent,
-    SuggestComponent,
   ]
 })
 export class MainModule { }
