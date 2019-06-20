@@ -5,10 +5,10 @@ import { InitGuardService } from './services/init-guard/init-guard.service';
 
 const routes: Routes = [
   // { path: 'setup', component: SetupComponent, canActivate: [ InitGuardService ] }, // 路由守卫
-  { path: 'main', redirectTo: '/main', pathMatch: 'full' },
+  { path: 'default', redirectTo: '/default', pathMatch: 'full' },
   // { path: 'summary', redirectTo: '/summary', pathMatch: 'full' },
   // { path: 'setting', redirectTo: '/setting', pathMatch: 'full' },
-  { path: '', redirectTo: '/main', pathMatch: 'full' }
+  { path: '', redirectTo: '/default', pathMatch: 'full' }
 ];
 
 @NgModule({

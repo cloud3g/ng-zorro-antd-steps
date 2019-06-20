@@ -52,7 +52,7 @@ export class DetailComponent implements OnInit {
   }
 
   goBack(): void {
-    this.router.navigateByUrl('main');
+    this.router.navigateByUrl('default');
   }
 
   handlePlanDateChange(date: Date): void {

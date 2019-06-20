@@ -2,7 +2,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { defaultPageSwitchTransition } from './default.animation';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-default',
   templateUrl: './default.component.html',
   styleUrls: [ './default.component.css' ],
   animations: [ defaultPageSwitchTransition ]
