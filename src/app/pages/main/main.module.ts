@@ -26,10 +26,10 @@ import { HeaderComponent } from './content/header/header.component';
     FormsModule
   ],
 
-  // TodoComponent, // 待办列表
-  // DetailComponent, // 待办详情
-  // QuickAddComponent, // 新增待办
-  // SuggestComponent, // 建议按钮 内容
+  // TodoComponent, // 右边 待办列表
+  // DetailComponent, // 右边 待办详情
+  // QuickAddComponent, // 右边 新增待办
+  // SuggestComponent, // 右边 建议按钮 内容
   declarations: [
     MainComponent,
     SidebarComponent,
