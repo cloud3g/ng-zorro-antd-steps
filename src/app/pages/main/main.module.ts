@@ -12,12 +12,12 @@ import { ListComponent } from './sidebar/list/list.component';
 
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './content/header/header.component';
-import { QuickAddComponent } from './content/quick-add/quick-add.component';
+
 import { TodoComponent } from './content/todo/todo.component';
 import { SuggestComponent } from './content/header/suggest/suggest.component';
 
-import { DetailComponent } from './detail/detail.component';
-
+// import { DetailComponent } from './detail/detail.component';
+// import { QuickAddComponent } from './content/quick-add/quick-add.component';
 
 @NgModule({
   imports: [
@@ -26,16 +26,17 @@ import { DetailComponent } from './detail/detail.component';
     MainRoutingModule,
     FormsModule
   ],
+
+  // DetailComponent // 待办详情
+  // QuickAddComponent, // 新增待办
   declarations: [
     MainComponent,
     SidebarComponent,
     ListComponent,
     ContentComponent,
     HeaderComponent,
-    QuickAddComponent,
     TodoComponent,
     SuggestComponent,
-    DetailComponent
   ]
 })
 export class MainModule { }

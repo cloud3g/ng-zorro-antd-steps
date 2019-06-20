@@ -11,13 +11,13 @@ const routes: Routes = [
     component: MainComponent,
     // canActivate: [ false ],
     canActivate: [ InitGuardService ],
-    children: [
-      {
-        path: ':id',
-        component: DetailComponent,
-        pathMatch: 'full'
-      }
-    ]
+    // children: [
+    //   {
+    //     path: ':id',
+    //     component: DetailComponent,
+    //     pathMatch: 'full'
+    //   }
+    // ]
   }
 ];
 

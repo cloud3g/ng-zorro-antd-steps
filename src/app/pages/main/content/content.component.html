@@ -2,10 +2,14 @@
   <nz-header class="header-wrapper">
     <app-header></app-header>
   </nz-header>
-  <nz-content class="list-wrapper">
-    <app-todo></app-todo>
-  </nz-content>
-  <div class="quick-add-wrapper" [class.center]="todoList.todos.length === 0">
-    <app-quick-add (add)="add($event)"></app-quick-add>
-  </div>
+
+  <!--显示详情-->
+  <!--<nz-content class="list-wrapper">-->
+    <!--<app-todo></app-todo>-->
+  <!--</nz-content>-->
+
+  <!--添加待办-->
+  <!--<div class="quick-add-wrapper" [class.center]="todoList.todos.length === 0">-->
+    <!--<app-quick-add (add)="add($event)"></app-quick-add>-->
+  <!--</div>-->
 </nz-layout>
