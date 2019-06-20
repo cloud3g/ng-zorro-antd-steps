@@ -4,7 +4,7 @@ import { SetupComponent } from './pages/setup/setup.component';
 import { InitGuardService } from './services/init-guard/init-guard.service';
 
 const routes: Routes = [
-  { path: 'setup', component: SetupComponent, canActivate: [ InitGuardService ] },
+  // { path: 'setup', component: SetupComponent, canActivate: [ InitGuardService ] }, // 路由守卫
   { path: 'main', redirectTo: '/main', pathMatch: 'full' },
   // { path: 'summary', redirectTo: '/summary', pathMatch: 'full' },
   // { path: 'setting', redirectTo: '/setting', pathMatch: 'full' },

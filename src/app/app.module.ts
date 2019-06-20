@@ -11,7 +11,7 @@ import zh from '@angular/common/locales/zh';
 
 // modules
 import { AppRoutingModule } from './app-routing.module';
-import { SetupModule } from './pages/setup/setup.module';
+// import { SetupModule } from './pages/setup/setup.module';
 import { MainModule } from './pages/main/main.module';
 
 // services
@@ -31,6 +31,7 @@ registerLocaleData(zh);
 
   // SummaryModule,
   // SettingModule
+  // SetupModule,
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -38,7 +39,6 @@ registerLocaleData(zh);
     HttpClientModule,
     NgZorroAntdModule,
     AppRoutingModule,
-    SetupModule,
     MainModule,
   ],
   providers: [

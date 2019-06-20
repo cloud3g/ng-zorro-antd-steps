@@ -12,6 +12,7 @@ export class InitGuardService implements CanActivate {
   ) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+    //路由守卫 逻辑
     const init = !!this.store.get(INIT_FLAG);
 
     if (state.url.includes('setup') && init) {

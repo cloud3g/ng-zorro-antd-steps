@@ -9,8 +9,8 @@ const routes: Routes = [
   {
     path: 'main',
     component: MainComponent,
-    // canActivate: [ false ],
-    canActivate: [ InitGuardService ],
+    // canActivate: [ InitGuardService ], // 路由守卫
+
     // children: [
     //   {
     //     path: ':id',
