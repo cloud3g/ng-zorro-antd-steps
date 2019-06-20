@@ -4,8 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { MainComponent } from './main.component';
 import { MainRoutingModule } from './main-routing.module';
-import { LeftControlComponent } from './left-control/left-control.component';
-import { ListComponent } from './left-control/list/list.component';
+// import { LeftControlComponent } from './left-control/left-control.component';
+// import { ListComponent } from './left-control/list/list.component';
+
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ListComponent } from './sidebar/list/list.component';
+
 import { RightControlComponent } from './right-control/right-control.component';
 import { HeaderComponent } from './right-control/header/header.component';
 import { QuickAddComponent } from './right-control/quick-add/quick-add.component';
@@ -23,7 +27,7 @@ import { DetailComponent } from './detail/detail.component';
   ],
   declarations: [
     MainComponent,
-    LeftControlComponent,
+    SidebarComponent,
     ListComponent,
     RightControlComponent,
     HeaderComponent,
