@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { MainComponent } from './main.component';
-import { MainRoutingModule } from './main-routing.module';
+import { DefaultComponent } from './default.component';
+import { DefaultRoutingModule } from './default-routing.module';
 // import { LeftControlComponent } from './left-control/left-control.component';
 // import { ListComponent } from './left-control/list/list.component';
 
@@ -22,7 +22,7 @@ import { HeaderComponent } from './content/header/header.component';
   imports: [
     CommonModule,
     NgZorroAntdModule,
-    MainRoutingModule,
+    DefaultRoutingModule,
     FormsModule
   ],
 
@@ -32,10 +32,10 @@ import { HeaderComponent } from './content/header/header.component';
   // SuggestComponent, // 右边 建议按钮 内容
   // ListComponent, //左边
   declarations: [
-    MainComponent,
+    DefaultComponent,
     SidebarComponent,
     ContentComponent,
     HeaderComponent,
   ]
 })
-export class MainModule { }
+export class DefaultModule { }

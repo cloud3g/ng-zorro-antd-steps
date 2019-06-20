@@ -11,16 +11,16 @@ import zh from '@angular/common/locales/zh';
 
 // modules
 import { AppRoutingModule } from './app-routing.module';
-// import { SetupModule } from './pages/setup/setup.module';
-import { MainModule } from './pages/main/main.module';
+// import { SetupModule } from './layout/setup/setup.module';
+import { MainModule } from './layout/main/main.module';
 
 // services
 import { LocalStorageService } from './services/local-storage/local-storage.service';
 // import { ListService } from './services/list/list.service';
 // import { TodoService } from './services/todo/todo.service';
 import { InitGuardService } from './services/init-guard/init-guard.service';
-// import { SummaryModule } from './pages/summary/summary.module';
-// import { SettingModule } from './pages/setting/setting.module';
+// import { SummaryModule } from './layout/summary/summary.module';
+// import { SettingModule } from './layout/setting/setting.module';
 
 registerLocaleData(zh);
 

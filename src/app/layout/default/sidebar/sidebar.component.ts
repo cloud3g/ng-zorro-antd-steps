@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { ListComponent } from './list/list.component';
+// import { ListComponent } from './list/list.component';
 import { LocalStorageService } from '../../../services/local-storage/local-storage.service';
 import { USERNAME } from '../../../services/local-storage/local-storage.namespace';
 
@@ -12,7 +12,7 @@ import { USERNAME } from '../../../services/local-storage/local-storage.namespac
 })
 export class SidebarComponent implements OnInit {
   @Input() isCollapsed: boolean;
-  @ViewChild(ListComponent) listComponent: ListComponent;
+  // @ViewChild(ListComponent) listComponent: ListComponent;
 
   username: string;
 
@@ -27,7 +27,7 @@ export class SidebarComponent implements OnInit {
   }
 
   openAddListModal(): void {
-    this.listComponent.openAddListModal();
+    // this.listComponent.openAddListModal();
   }
 
   goSetting() {
